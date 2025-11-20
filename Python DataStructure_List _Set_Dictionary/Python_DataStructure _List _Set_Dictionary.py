@@ -15,3 +15,8 @@ print()
 
 for item in items:
     print(item,type(item))
+
+print()
+
+for i, item in enumerate(items):
+    print(i,item)
