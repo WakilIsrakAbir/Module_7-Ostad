@@ -20,3 +20,12 @@ print()
 
 for i, item in enumerate(items):
     print(i,item)
+
+print()
+
+li2=[4,5,6,7]
+items=items+li2
+#items.extend(li2)
+#items.append(li2)
+print(items)
+
