@@ -29,3 +29,14 @@ items=items+li2
 #items.append(li2)
 print(items)
 
+for index,x in enumerate(items):
+    print(index,x,items[index])
+
+print()
+
+items=[1,2,3]
+another_list=[4,5,6]
+items.append(another_list)
+print(items)
+print("The list has {} items.".format(len(items)))
+print(items[3][2])
