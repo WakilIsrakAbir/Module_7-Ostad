@@ -54,3 +54,9 @@ print(s)
 m=[1,5,8]
 m[0]=9
 print(m)
+
+t=(1,2,3,2,2,3)
+print(t,type(t))
+# print(dir(t))
+print(t.count(2))
+print(t.index(3))
