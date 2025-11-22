@@ -40,3 +40,17 @@ items.append(another_list)
 print(items)
 print("The list has {} items.".format(len(items)))
 print(items[3][2])
+
+items=[1,2,3]
+print(dir(items))
+print(help(list.sort))
+
+s=[4,6,7,1,3,9]
+s.sort()
+print(s)
+s.sort(reverse=True)
+print(s)
+
+m=[1,5,8]
+m[0]=9
+print(m)
