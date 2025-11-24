@@ -60,3 +60,31 @@ print(t,type(t))
 # print(dir(t))
 print(t.count(2))
 print(t.index(3))
+
+swap
+a=10
+b=5
+temp=b
+b=a
+a=temp
+b,a=a,b
+print(a,b)
+
+
+#Set
+s={1,2,3,4,5,6}
+s.add(4)
+s.add(8)
+print(s,type(s))
+
+li=[1,2,3,4]
+s=set(li)
+print(s,type(s))
+
+li=[1,2,3,4,5,5]
+s=set(li)
+li=list(s)
+print(li,type(li))
+
+s={1,2,3}
+print(3 in s)
