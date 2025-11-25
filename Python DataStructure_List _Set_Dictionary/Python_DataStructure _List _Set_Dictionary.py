@@ -88,3 +88,36 @@ print(li,type(li))
 
 s={1,2,3}
 print(3 in s)
+
+
+text=" blue calms like a quiet sea, red ignites like a beating heart, green breathes like a forest after rain. red green blue"
+colors=["red","green","blue","white"]
+li=[]
+word_list=text.split()
+for word in word_list:
+    if word in colors:
+        li.append(word)
+print(li)
+
+text=" blue calms like a quiet sea, red ignites like a beating heart, green breathes like a forest after rain. red green blue"
+colors=["red","green","blue","white"]
+li=set()
+word_list=text.split()
+for word in word_list:
+    if word in colors:
+        li.add(word)
+print(li)
+
+
+#Dictionary
+text=" blue calms like a quiet sea , red ignites like a beating heart , green breathes like a forest after rain. red green blue"
+colors=["red","green","blue","white","heart","sea"]
+dt={}
+word_list=text.split()
+for word in word_list:
+    if word in colors:
+        if word not in dt.keys():
+            dt[word]=1
+        else:
+            dt[word] +=1
+print(dt)
