@@ -121,3 +121,8 @@ for word in word_list:
         else:
             dt[word] +=1
 print(dt)
+
+dt={1:"one",2:"Two",3:"three"}
+print(dt.keys())
+print(dt.values())
+print(dt)
