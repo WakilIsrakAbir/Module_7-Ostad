@@ -126,3 +126,28 @@ dt={1:"one",2:"Two",3:"three"}
 print(dt.keys())
 print(dt.values())
 print(dt)
+
+dt={1:"one",2:"Two",3:"three"}     #key:"value"
+for k,v in dt.items():
+    print(k,v)
+
+dt={"one":1,"two":2,"three":3}     #key:"value"
+for k,v in dt.items():
+    print(k,v)
+print(dt["three"])
+
+# Exercise from codingBat
+   # Topic:logic2
+#make_bricks
+def make_bricks(small, big, goal):
+  while goal >=5 and big>0:
+    goal=goal-5
+    big=big-1
+  while goal >=1 and small>0:
+    goal=goal-1
+    small=small-1
+  if goal == 0:
+    return True
+  else:
+    return False
+
