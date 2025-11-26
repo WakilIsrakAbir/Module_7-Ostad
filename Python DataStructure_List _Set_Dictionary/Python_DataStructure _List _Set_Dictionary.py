@@ -137,8 +137,8 @@ for k,v in dt.items():
 print(dt["three"])
 
 # Exercise from codingBat
-   # Topic:logic2
-#make_bricks
+# Topic:logic2
+#Question1:make_bricks
 def make_bricks(small, big, goal):
   while goal >=5 and big>0:
     goal=goal-5
@@ -151,3 +151,11 @@ def make_bricks(small, big, goal):
   else:
     return False
 
+#another way:
+def make_bricks(small, big, goal):
+  big=big*5
+  if big >=goal:
+    goal=goal%5
+  else:
+    goal=goal-big
+  return goal <= small
